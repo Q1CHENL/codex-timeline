@@ -1,0 +1,15 @@
+{
+  "name": "codex-timeline",
+  "private": true,
+  "license": "MIT",
+  "description": "Interactive timeline of the Codex desktop home screen, rendered from each official package's original frontend.",
+  "scripts": {
+    "rebuild": "python3 pipeline/rebuild.py",
+    "page": "python3 player/build-page.py && cp data/preview.html dist/codex-timeline.html"
+  },
+  "devDependencies": {
+    "pixelmatch": "7.2.0",
+    "playwright": "1.62.1",
+    "pngjs": "7.0.0"
+  }
+}

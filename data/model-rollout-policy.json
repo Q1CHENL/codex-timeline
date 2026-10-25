@@ -1,0 +1,1540 @@
+{
+  "schemaVersion": 2,
+  "policy": "Reconstruct a contemporary Codex model selection from official availability dates and public catalog default priority. Use representative selections where desktop defaults cannot be verified. Historical server defaults are not claimed.",
+  "dateConvention": "Official rollout days are placed at midnight UTC for display. This is not a measured activation timestamp, nor the public source commit or CLI publication time.",
+  "effortPolicy": "Use the selected model catalog reasoning default (Medium through GPT-5.5, Low for GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol). Earlier availability-date use of later catalog effort is representative.",
+  "events": [
+    {
+      "id": "gpt-5.2-codex",
+      "effectiveAt": "2026-02-02T00:00:00Z",
+      "datePrecision": "day",
+      "model": "gpt-5.2-codex",
+      "displayName": "gpt-5.2-codex",
+      "reasoningEffort": "medium",
+      "basis": "catalog-supported-reconstruction",
+      "catalogModels": [
+        {
+          "model": "gpt-5.2-codex",
+          "displayName": "gpt-5.2-codex",
+          "description": "Latest frontier agentic coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.1-codex-max",
+          "displayName": "gpt-5.1-codex-max",
+          "description": "Codex-optimized flagship for deep and fast reasoning.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.1-codex-mini",
+          "displayName": "gpt-5.1-codex-mini",
+          "description": "Optimized for codex. Cheaper, faster, but less capable.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "medium",
+              "description": "Dynamically adjusts reasoning based on the task"
+            },
+            {
+              "effort": "high",
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.2",
+          "displayName": "gpt-5.2",
+          "description": "Latest frontier model with improvements across knowledge, reasoning and coding",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Balances speed with some reasoning; useful for straightforward queries and short explanations"
+            },
+            {
+              "effort": "medium",
+              "description": "Provides a solid balance of reasoning depth and latency for general-purpose tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning for complex problems"
+            }
+          ]
+        }
+      ],
+      "historicalServiceDefaultVerified": false,
+      "selectionRationale": "Default-priority visible model in the public catalog; its application to the desktop rollout day is reconstructed.",
+      "accessScope": "Eligible Codex users; availability may vary by account.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-2-codex/",
+          "title": "Introducing GPT-5.2-Codex",
+          "quote": "Today we’re releasing GPT‑5.2‑Codex",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "e117e9c6b7a786e641906db6f3ee39666b57974b3c8100278110dbf037115618"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/changelog",
+          "section": "2025-12-18 Introducing GPT-5.2-Codex",
+          "quote": "the CLI and IDE Extension will default to `gpt-5.2-codex`",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "5862ff06062bdd39bf799948415fd014afb52daada9130fe6c7b897dbf751963"
+        },
+        {
+          "url": "https://openai.com/index/introducing-the-codex-app/",
+          "title": "Introducing the Codex app",
+          "section": "February 2, 2026; Availability & pricing",
+          "quote": "The Codex app is available starting today on macOS.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "9916bc157c6c5e28080d7d4f8f90145e7b5a5d32046a3dc9c872484eb737b3c8"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/ebbbee70c6ce9acff65ecb0c05041c8fae073a06/codex-rs/core/models.json",
+          "title": "Public Codex model catalog",
+          "sourceCommit": "ebbbee70c6ce9acff65ecb0c05041c8fae073a06",
+          "sourceCommittedAt": "2026-01-14T00:46:24Z",
+          "sha256": "4d660e6b9fb7b2a1354488c5dedc834359d6e87f00c8ef7b0e0784f94b0273d1",
+          "selection": {
+            "slug": "gpt-5.2-codex",
+            "display_name": "gpt-5.2-codex",
+            "default_reasoning_level": "medium",
+            "visibility": "list",
+            "supported_in_api": false,
+            "priority": 0,
+            "description": "Latest frontier agentic coding model.",
+            "supported_reasoning_levels": [
+              {
+                "effort": "low",
+                "description": "Fast responses with lighter reasoning"
+              },
+              {
+                "effort": "medium",
+                "description": "Balances speed and reasoning depth for everyday tasks"
+              },
+              {
+                "effort": "high",
+                "description": "Greater reasoning depth for complex problems"
+              },
+              {
+                "effort": "xhigh",
+                "description": "Extra high reasoning depth for complex problems"
+              }
+            ]
+          },
+          "scope": "Public source catalog; not an archived per-account service response"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "effectiveAt": "2026-02-05T00:00:00Z",
+      "datePrecision": "day",
+      "model": "gpt-5.3-codex",
+      "displayName": "gpt-5.3-codex",
+      "reasoningEffort": "medium",
+      "basis": "official-release-representative",
+      "catalogModels": [
+        {
+          "model": "gpt-5.3-codex",
+          "displayName": "gpt-5.3-codex",
+          "description": "Latest frontier agentic coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.2-codex",
+          "displayName": "gpt-5.2-codex",
+          "description": "Frontier agentic coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.1-codex-max",
+          "displayName": "gpt-5.1-codex-max",
+          "description": "Codex-optimized flagship for deep and fast reasoning.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.2",
+          "displayName": "gpt-5.2",
+          "description": "Latest frontier model with improvements across knowledge, reasoning and coding",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Balances speed with some reasoning; useful for straightforward queries and short explanations"
+            },
+            {
+              "effort": "medium",
+              "description": "Provides a solid balance of reasoning depth and latency for general-purpose tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.1-codex-mini",
+          "displayName": "gpt-5.1-codex-mini",
+          "description": "Optimized for codex. Cheaper, faster, but less capable.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "medium",
+              "description": "Dynamically adjusts reasoning based on the task"
+            },
+            {
+              "effort": "high",
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
+            }
+          ]
+        }
+      ],
+      "historicalServiceDefaultVerified": false,
+      "selectionRationale": "Contemporary representative from the official Codex availability date. A later catalog corroborates the model and effort, not this default-switch date.",
+      "accessScope": "Eligible Codex users; availability may vary by account.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
+          "title": "Introducing GPT-5.3-Codex",
+          "quote": "everywhere you can use Codex: the app, CLI, IDE extension and web.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "e64695b128b8c5ddb5158f1dafa94e99b04a44b9f310e1215a43335a9617b90e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/d45ffd5830027978b322c9b88754ded78d1bf339/codex-rs/core/models.json",
+          "title": "Public Codex model catalog",
+          "sourceCommit": "d45ffd5830027978b322c9b88754ded78d1bf339",
+          "sourceCommittedAt": "2026-02-25T21:01:40Z",
+          "sha256": "9f873c85f6057f5411b64fd42a92f8d287d4090f501708474f1685ab11bb6456",
+          "selection": {
+            "slug": "gpt-5.3-codex",
+            "display_name": "gpt-5.3-codex",
+            "default_reasoning_level": "medium",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 0,
+            "description": "Latest frontier agentic coding model.",
+            "supported_reasoning_levels": [
+              {
+                "effort": "low",
+                "description": "Fast responses with lighter reasoning"
+              },
+              {
+                "effort": "medium",
+                "description": "Balances speed and reasoning depth for everyday tasks"
+              },
+              {
+                "effort": "high",
+                "description": "Greater reasoning depth for complex problems"
+              },
+              {
+                "effort": "xhigh",
+                "description": "Extra high reasoning depth for complex problems"
+              }
+            ]
+          },
+          "scope": "Public source catalog; not an archived per-account service response"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.4",
+      "effectiveAt": "2026-03-05T00:00:00Z",
+      "datePrecision": "day",
+      "model": "gpt-5.4",
+      "displayName": "gpt-5.4",
+      "reasoningEffort": "medium",
+      "basis": "official-release-representative",
+      "catalogModels": [
+        {
+          "model": "gpt-5.4",
+          "displayName": "gpt-5.4",
+          "description": "Latest frontier agentic coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.4-mini",
+          "displayName": "GPT-5.4-Mini",
+          "description": "Smaller frontier agentic coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.3-codex",
+          "displayName": "gpt-5.3-codex",
+          "description": "Frontier Codex-optimized agentic coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.2",
+          "displayName": "gpt-5.2",
+          "description": "Optimized for professional work and long-running agents",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Balances speed with some reasoning; useful for straightforward queries and short explanations"
+            },
+            {
+              "effort": "medium",
+              "description": "Provides a solid balance of reasoning depth and latency for general-purpose tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning for complex problems"
+            }
+          ]
+        }
+      ],
+      "historicalServiceDefaultVerified": false,
+      "selectionRationale": "Contemporary representative from the official Codex availability date. A later catalog corroborates the model and effort, not this default-switch date.",
+      "accessScope": "Eligible Codex users; availability may vary by account.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "title": "Introducing GPT-5.4",
+          "quote": "Today, we’re releasing GPT‑5.4 in ChatGPT (as GPT‑5.4 Thinking), the API, and Codex.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "bf73226d5fbe1cfdbc897f9ab08ee1b2ef14e0481ff7fbcd38427aca2d1d31ae"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/316cf0e90b2eac4e998af7fa6ae7a5ba85ad96bb/codex-rs/models-manager/models.json",
+          "title": "Public Codex model catalog",
+          "sourceCommit": "316cf0e90b2eac4e998af7fa6ae7a5ba85ad96bb",
+          "sourceCommittedAt": "2026-04-20T17:27:01Z",
+          "sha256": "ad6af6bffa7e733e47d63ef83a0e845c1a30918c028fd6ae360e9208e82300d2",
+          "selection": {
+            "slug": "gpt-5.4",
+            "display_name": "gpt-5.4",
+            "default_reasoning_level": "medium",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 2,
+            "description": "Latest frontier agentic coding model.",
+            "supported_reasoning_levels": [
+              {
+                "effort": "low",
+                "description": "Fast responses with lighter reasoning"
+              },
+              {
+                "effort": "medium",
+                "description": "Balances speed and reasoning depth for everyday tasks"
+              },
+              {
+                "effort": "high",
+                "description": "Greater reasoning depth for complex problems"
+              },
+              {
+                "effort": "xhigh",
+                "description": "Extra high reasoning depth for complex problems"
+              }
+            ]
+          },
+          "scope": "Public source catalog; not an archived per-account service response"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.5",
+      "effectiveAt": "2026-04-23T00:00:00Z",
+      "datePrecision": "day",
+      "model": "gpt-5.5",
+      "displayName": "GPT-5.5",
+      "reasoningEffort": "medium",
+      "basis": "official-release-representative",
+      "catalogModels": [
+        {
+          "model": "gpt-5.5",
+          "displayName": "GPT-5.5",
+          "description": "Frontier model for complex coding, research, and real-world work.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.4",
+          "displayName": "gpt-5.4",
+          "description": "Strong model for everyday coding.",
+          "defaultReasoningEffort": "xhigh",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.4-mini",
+          "displayName": "GPT-5.4-Mini",
+          "description": "Small, fast, and cost-efficient model for simpler coding tasks.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.3-codex",
+          "displayName": "gpt-5.3-codex",
+          "description": "Coding-optimized model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.2",
+          "displayName": "gpt-5.2",
+          "description": "Optimized for professional work and long-running agents.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Balances speed with some reasoning; useful for straightforward queries and short explanations"
+            },
+            {
+              "effort": "medium",
+              "description": "Provides a solid balance of reasoning depth and latency for general-purpose tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning for complex problems"
+            }
+          ]
+        }
+      ],
+      "historicalServiceDefaultVerified": false,
+      "selectionRationale": "Contemporary representative from the official Codex availability date. A later catalog corroborates the model and effort, not this default-switch date.",
+      "accessScope": "Eligible Codex users; availability may vary by account.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "title": "Introducing GPT-5.5",
+          "quote": "Today, GPT‑5.5 is rolling out to Plus, Pro, Business, and Enterprise users in ChatGPT and Codex",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "2689b02919e2430504b93114f61c0be58c0fe8bc7eb5ef63300b4950a6ef1f9e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/c10f95ddac7b35095d334dece2ebcf69bcde61fc/codex-rs/models-manager/models.json",
+          "title": "Public Codex model catalog",
+          "sourceCommit": "c10f95ddac7b35095d334dece2ebcf69bcde61fc",
+          "sourceCommittedAt": "2026-04-24T09:14:13Z",
+          "sha256": "1a51838d888f75aef7ca245db26370a4b2b840dcb676bb37cbe44a345d027a1d",
+          "selection": {
+            "slug": "gpt-5.5",
+            "display_name": "GPT-5.5",
+            "default_reasoning_level": "medium",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 0,
+            "description": "Frontier model for complex coding, research, and real-world work.",
+            "supported_reasoning_levels": [
+              {
+                "effort": "low",
+                "description": "Fast responses with lighter reasoning"
+              },
+              {
+                "effort": "medium",
+                "description": "Balances speed and reasoning depth for everyday tasks"
+              },
+              {
+                "effort": "high",
+                "description": "Greater reasoning depth for complex problems"
+              },
+              {
+                "effort": "xhigh",
+                "description": "Extra high reasoning depth for complex problems"
+              }
+            ]
+          },
+          "scope": "Public source catalog; not an archived per-account service response"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "effectiveAt": "2026-07-09T00:00:00Z",
+      "datePrecision": "day",
+      "model": "gpt-5.6-sol",
+      "displayName": "GPT-5.6-Sol",
+      "reasoningEffort": "low",
+      "basis": "catalog-supported-reconstruction",
+      "catalogModels": [
+        {
+          "model": "gpt-5.6-sol",
+          "displayName": "GPT-5.6-Sol",
+          "description": "Latest frontier agentic coding model.",
+          "defaultReasoningEffort": "low",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.6-terra",
+          "displayName": "GPT-5.6-Terra",
+          "description": "Balanced agentic coding model for everyday work.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.6-luna",
+          "displayName": "GPT-5.6-Luna",
+          "description": "Fast and affordable agentic coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.5",
+          "displayName": "GPT-5.5",
+          "description": "Frontier model for complex coding, research, and real-world work.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.4",
+          "displayName": "GPT-5.4",
+          "description": "Strong model for everyday coding.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.4-mini",
+          "displayName": "GPT-5.4-Mini",
+          "description": "Small, fast, and cost-efficient model for simpler coding tasks.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.2",
+          "displayName": "GPT-5.2",
+          "description": "Optimized for professional work and long-running agents.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Balances speed with some reasoning; useful for straightforward queries and short explanations"
+            },
+            {
+              "effort": "medium",
+              "description": "Provides a solid balance of reasoning depth and latency for general-purpose tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning for complex problems"
+            }
+          ]
+        }
+      ],
+      "historicalServiceDefaultVerified": false,
+      "selectionRationale": "Default-priority visible model in the public catalog; its application to the desktop rollout day is reconstructed.",
+      "accessScope": "Eligible Codex users; availability may vary by account.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/gpt-5-6/",
+          "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+          "quote": "GPT‑5.6 is available starting today across ChatGPT, Codex, and the OpenAI API.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "dbe5726bd2c5396b8ac40741ed98cfa4a8a078e47ce2f58129430c0d8f2395c1"
+        },
+        {
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "title": "Previewing GPT-5.6 Sol",
+          "quote": "a select group of trusted partners and organizations",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "37cc4bc09c064d0dd0b38f7a55a4fb33f0abef1f87e4016693693fd353c6fcea"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/3380969a29134630d56feb6218e8e8dcc5e8196d/codex-rs/models-manager/models.json",
+          "title": "Public Codex model catalog",
+          "sourceCommit": "3380969a29134630d56feb6218e8e8dcc5e8196d",
+          "sourceCommittedAt": "2026-07-09T03:40:08Z",
+          "sha256": "dcab00231a5178a9c84b7aef4cc06a1e1359e37ee0dd7e69d5822c4b1de723b1",
+          "selection": {
+            "slug": "gpt-5.6-sol",
+            "display_name": "GPT-5.6-Sol",
+            "default_reasoning_level": "low",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 1,
+            "description": "Latest frontier agentic coding model.",
+            "supported_reasoning_levels": [
+              {
+                "effort": "low",
+                "description": "Fast responses with lighter reasoning"
+              },
+              {
+                "effort": "medium",
+                "description": "Balances speed and reasoning depth for everyday tasks"
+              },
+              {
+                "effort": "high",
+                "description": "Greater reasoning depth for complex problems"
+              },
+              {
+                "effort": "xhigh",
+                "description": "Extra high reasoning depth for complex problems"
+              },
+              {
+                "effort": "max",
+                "description": "Maximum reasoning depth for the hardest problems"
+              },
+              {
+                "effort": "ultra",
+                "description": "Maximum reasoning with automatic task delegation"
+              }
+            ]
+          },
+          "scope": "Public source catalog; not an archived per-account service response"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra",
+      "effectiveAt": "2026-09-04T00:00:00Z",
+      "datePrecision": "day",
+      "model": "gpt-6-astra",
+      "displayName": "GPT-6-Astra",
+      "reasoningEffort": "low",
+      "basis": "catalog-supported-reconstruction",
+      "catalogModels": [
+        {
+          "model": "gpt-6-astra",
+          "displayName": "GPT-6-Astra",
+          "description": "Our most capable model for complex, demanding work.",
+          "defaultReasoningEffort": "low",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "displayName": "GPT-5.6-Sol",
+          "description": "Latest frontier agentic coding model.",
+          "defaultReasoningEffort": "low",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.6-terra",
+          "displayName": "GPT-5.6-Terra",
+          "description": "Balanced agentic coding model for everyday work.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.6-luna",
+          "displayName": "GPT-5.6-Luna",
+          "description": "Fast and affordable agentic coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.5",
+          "displayName": "GPT-5.5",
+          "description": "Frontier model for complex coding, research, and real-world work.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.2",
+          "displayName": "GPT-5.2",
+          "description": "Optimized for professional work and long-running agents.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Balances speed with some reasoning; useful for straightforward queries and short explanations"
+            },
+            {
+              "effort": "medium",
+              "description": "Provides a solid balance of reasoning depth and latency for general-purpose tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning for complex problems"
+            }
+          ]
+        }
+      ],
+      "historicalServiceDefaultVerified": false,
+      "selectionRationale": "Default-priority visible model in the public catalog; its application to the desktop rollout day is reconstructed.",
+      "accessScope": "Eligible paid ChatGPT account; Astra September 4 availability was limited to specified paid plans.",
+      "evidence": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "section": "September 3, 2026: Introducing GPT-6 Astra",
+          "quote": "Astra is not yet generally available.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "484e17e36743bd979a323a1993980e5755513deda968765685efea71ed70f4fa"
+        },
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "title": "GPT-6 Astra: A new generation of intelligence",
+          "quote": "GPT‑6 Astra is rolling out today to a limited set of organizations",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "a07b175aecdf283f5340240fc1cf9ba4431638269b1fc8f38766cc951092658c"
+        },
+        {
+          "url": "https://community.openai.com/t/introducing-gpt-6-astra-the-most-intelligent-and-aligned-model-in-the-world/1394703",
+          "section": "Official announcement, embedded OpenAI September 4 rollout update",
+          "quote": "now available to all Pro, Enterprise, and Business Premium users in ChatGPT Work and Codex",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "8d77550e1b5aa65fff8b85fd189b26d89ef84db1e7d6d07bca67c9a785a5da5e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/a97cf1b72eaad05aa49847bc81d09ceac9327754/codex-rs/models-manager/models.json",
+          "title": "Public Codex model catalog",
+          "sourceCommit": "a97cf1b72eaad05aa49847bc81d09ceac9327754",
+          "sourceCommittedAt": "2026-09-04T22:47:01Z",
+          "sha256": "d7136a413cfac1b5b1686d9e0dcc5c80ca05bebed5e9fc3911376561d0ef6ee8",
+          "selection": {
+            "slug": "gpt-6-astra",
+            "display_name": "GPT-6-Astra",
+            "default_reasoning_level": "low",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 1,
+            "description": "Our most capable model for complex, demanding work.",
+            "supported_reasoning_levels": [
+              {
+                "effort": "low",
+                "description": "Fast responses with lighter reasoning"
+              },
+              {
+                "effort": "medium",
+                "description": "Balances speed and reasoning depth for everyday tasks"
+              },
+              {
+                "effort": "high",
+                "description": "Greater reasoning depth for complex problems"
+              },
+              {
+                "effort": "xhigh",
+                "description": "Extra high reasoning depth for complex problems"
+              },
+              {
+                "effort": "max",
+                "description": "Maximum reasoning depth for the hardest problems"
+              },
+              {
+                "effort": "ultra",
+                "description": "Maximum reasoning with automatic task delegation"
+              }
+            ]
+          },
+          "scope": "Public source catalog; not an archived per-account service response"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "effectiveAt": "2026-09-29T00:00:00Z",
+      "datePrecision": "day",
+      "model": "gpt-6.1-sol",
+      "displayName": "GPT-6.1-Sol",
+      "reasoningEffort": "low",
+      "basis": "catalog-supported-reconstruction",
+      "catalogModels": [
+        {
+          "model": "gpt-6.1-sol",
+          "displayName": "GPT-6.1-Sol",
+          "description": "Latest workhorse model for coding and everyday work.",
+          "defaultReasoningEffort": "low",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-6-astra",
+          "displayName": "GPT-6-Astra",
+          "description": "Frontier intelligence for the most demanding work.",
+          "defaultReasoningEffort": "low",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-6-sol",
+          "displayName": "GPT-6-Sol",
+          "description": "Previous generation workhorse model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-6-luna",
+          "displayName": "GPT-6-Luna",
+          "description": "Fast and affordable model for easier tasks.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "displayName": "GPT-5.6-Sol",
+          "description": "Older generation workhorse model.",
+          "defaultReasoningEffort": "low",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.6-terra",
+          "displayName": "GPT-5.6-Terra",
+          "description": "Older balanced model for straightforward work.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "effort": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.6-luna",
+          "displayName": "GPT-5.6-Luna",
+          "description": "Older fast and efficient model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "effort": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            }
+          ]
+        },
+        {
+          "model": "gpt-5.5",
+          "displayName": "GPT-5.5",
+          "description": "Legacy coding model.",
+          "defaultReasoningEffort": "medium",
+          "reasoningEfforts": [
+            {
+              "effort": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "effort": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "effort": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "effort": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            }
+          ]
+        }
+      ],
+      "historicalServiceDefaultVerified": false,
+      "selectionRationale": "Default-priority visible model in the public catalog; its application to the desktop rollout day is reconstructed.",
+      "accessScope": "Eligible Codex users; availability may vary by account.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "title": "Introducing GPT-6.1 Sol",
+          "quote": "GPT‑6.1 Sol is available starting today to all Plus, Pro, Business, Enterprise, and Edu users in ChatGPT Work and Codex.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "49ce3ab7f0fa145c7befe4a45698ada163227cf0a969b34b43246a2a31a7335e"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/changelog",
+          "section": "2026-09-29 Codex CLI 0.159.1",
+          "quote": "Added GPT-6.1 Sol as the default model in the bundled catalog",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "5491f6520d53dec06dcbad199ed4b2f175cf840e727908dae8ce52e2319b24a3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/b1e72963c3b71a9265a551e54beff078384efed9/codex-rs/models-manager/models.json",
+          "title": "Public Codex model catalog",
+          "sourceCommit": "b1e72963c3b71a9265a551e54beff078384efed9",
+          "sourceCommittedAt": "2026-09-29T17:22:13Z",
+          "sha256": "fd219bd9f061278275f528939f82f54d2eb97df4b25c23b022adbe48813d920b",
+          "selection": {
+            "slug": "gpt-6.1-sol",
+            "display_name": "GPT-6.1-Sol",
+            "default_reasoning_level": "low",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 1,
+            "description": "Latest workhorse model for coding and everyday work.",
+            "supported_reasoning_levels": [
+              {
+                "effort": "low",
+                "description": "Fast responses with lighter reasoning"
+              },
+              {
+                "effort": "medium",
+                "description": "Balances speed and reasoning depth for everyday tasks"
+              },
+              {
+                "effort": "high",
+                "description": "Greater reasoning depth for complex problems"
+              },
+              {
+                "effort": "xhigh",
+                "description": "Extra high reasoning depth for complex problems"
+              },
+              {
+                "effort": "max",
+                "description": "Maximum reasoning depth for the hardest problems"
+              },
+              {
+                "effort": "ultra",
+                "description": "Maximum reasoning with automatic task delegation"
+              }
+            ]
+          },
+          "scope": "Public source catalog; not an archived per-account service response"
+        }
+      ]
+    }
+  ],
+  "otherAvailableModels": [
+    {
+      "id": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "releaseDate": "2026-09-22",
+      "representativeFrom": "2026-09-22",
+      "eventKind": "codex-availability",
+      "defaultEvidenceScope": null,
+      "confidence": "high availability evidence; representative selection",
+      "rationale": "Select the new lower-cost workhorse to show its historical arrival. Astra remains available and more capable; this is not a claim that Astra was retired or that all desktops switched.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "title": "Introducing GPT-6 Sol and Luna",
+          "quote": "GPT‑6 Sol and GPT‑6 Luna are available in ChatGPT Work and Codex starting today",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "9f559bc017ef9f4f1c0dcdece2158bf866aa86e16e3aee76b513a7a90be97a7d"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "section": "September 22, 2026: GPT-6 Sol and Luna in Work and Codex",
+          "quote": "Codex desktop keeps the model you selected manually.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "9a64937ea17902f9546391fa895c3267e5f86914f9f906097e05f0e31c461273"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": true
+    }
+  ],
+  "selectionNotes": [
+    "GPT-6 Sol was released September 22, but inspected catalogs prioritize Astra above Sol; it is not inserted as an assumed default switch.",
+    "A desktop package may bundle an older catalog after a newer model rollout. The date-based reconstruction does not regress solely because that fallback catalog regressed.",
+    "model/list metadata supplies the reconstructed selection to the original frontend. The isolated host fixture uses synthetic account data and a documented auth adapter per capture; it does not establish historical authentication or entitlement."
+  ],
+  "evidenceFiles": [
+    "model-rollout-research.json",
+    "engine-model-evidence.json",
+    "engine-model-catalog-history.json",
+    "engine-model-catalog-evidence.json"
+  ]
+}

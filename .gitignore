@@ -1,0 +1,45 @@
+node_modules/
+__pycache__/
+.DS_Store
+*.tmp
+*.tmp.*
+
+# Published page and evidence; rebuild with the pipeline.
+dist/
+
+# Official packages and everything rendered from them contain OpenAI's frontend
+# code, fonts and images. They are downloaded and regenerated, never committed.
+data/assets/
+data/renderers/
+data/staging/
+data/captures/
+data/captures-light/
+data/capture-results.json
+data/capture-results-light.json
+data/states/
+data/state-results.json
+data/state-results-light.json
+data/prepared-data.json
+data/fonts.css
+data/preview.html
+
+# The verification report describes one local build.
+data/verification.json
+
+# Raw research inputs. The committed history and evidence files record each
+# source's URL and SHA-256; the research tools live outside this repository.
+data/engine-model-catalog-*.json
+!data/engine-model-catalog-history.json
+!data/engine-model-catalog-evidence.json
+data/engine-model-commits-*.json
+data/engine-model-package-*.json
+data/engine-model-manager.rs
+data/account-fidelity-probe-results.json
+data/package-fallback-*.json
+
+# Evidence quoting OpenAI's frontend code verbatim; kept locally only.
+data/model-research-*.json
+data/model-prefix-source-evidence.json
+data/feature-fidelity-evidence.json
+data/account-fidelity-evidence.json
+data/account-fidelity-main-contracts.json

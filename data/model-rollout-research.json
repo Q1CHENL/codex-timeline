@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "researchedAt": "2026-10-05",
+  "scope": "Official source chronology for representative model selections in the Codex desktop interface archive",
+  "policy": {
+    "selection": "Represent a paid ChatGPT Codex user adopting the contemporary general-purpose workhorse, retaining Sol across GPT-5.6, GPT-6 and GPT-6.1. This is not a universal desktop-default history.",
+    "dateConvention": "Source dates have day precision. A UI boundary at midnight UTC is a rendering convention, not an observed rollout timestamp.",
+    "reasoningEffort": "Preserve the existing medium sample setting where supported; this research does not establish every historical default reasoning effort.",
+    "fixtureAuth": "The early GPT-5.3-Codex launch was ChatGPT-authenticated, not API-key general availability. Fixtures should be described as a reconstruction and not an observed authenticated historical session.",
+    "aboutText": "Model labels are a historical reconstruction. Official rollout dates and bundled model catalogs inform the selection; where a desktop default cannot be verified, the timeline uses a contemporary representative model. Saved preferences, account access and server rollouts may differ."
+  },
+  "events": [
+    {
+      "id": "gpt-5.2-codex",
+      "name": "GPT-5.2-Codex",
+      "releaseDate": "2025-12-18",
+      "representativeFrom": "2026-02-02",
+      "eventKind": "archive-baseline",
+      "defaultEvidenceScope": "CLI and IDE when signed in with ChatGPT; desktop launch baseline remains a reconstruction",
+      "confidence": "high release evidence; representative desktop selection",
+      "rationale": "The Codex model already available at archive start, before GPT-5.3-Codex rollout. Cross-check earliest package fallback before applying.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-2-codex/",
+          "title": "Introducing GPT-5.2-Codex",
+          "quote": "Today we’re releasing GPT‑5.2‑Codex",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "e117e9c6b7a786e641906db6f3ee39666b57974b3c8100278110dbf037115618"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/changelog",
+          "section": "2025-12-18 Introducing GPT-5.2-Codex",
+          "quote": "the CLI and IDE Extension will default to `gpt-5.2-codex`",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "5862ff06062bdd39bf799948415fd014afb52daada9130fe6c7b897dbf751963"
+        },
+        {
+          "url": "https://openai.com/index/introducing-the-codex-app/",
+          "title": "Introducing the Codex app",
+          "section": "February 2, 2026; Availability & pricing",
+          "quote": "The Codex app is available starting today on macOS.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "9916bc157c6c5e28080d7d4f8f90145e7b5a5d32046a3dc9c872484eb737b3c8"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": true
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "name": "GPT-5.3-Codex",
+      "releaseDate": "2026-02-05",
+      "representativeFrom": "2026-02-05",
+      "eventKind": "codex-availability",
+      "defaultEvidenceScope": null,
+      "confidence": "high availability evidence; representative selection",
+      "rationale": "Paid ChatGPT Codex rollout covered desktop, CLI, IDE and web. API-key availability lagged, so the reconstructed scenario must not be described as an API-key-only historical session.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
+          "title": "Introducing GPT-5.3-Codex",
+          "quote": "everywhere you can use Codex: the app, CLI, IDE extension and web.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "e64695b128b8c5ddb5158f1dafa94e99b04a44b9f310e1215a43335a9617b90e"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": true
+    },
+    {
+      "id": "gpt-5.4",
+      "name": "GPT-5.4",
+      "releaseDate": "2026-03-05",
+      "representativeFrom": "2026-03-05",
+      "eventKind": "codex-availability",
+      "defaultEvidenceScope": null,
+      "confidence": "high availability evidence; representative selection",
+      "rationale": "General frontier successor available in Codex; no verified universal desktop-default switch in reviewed announcement.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "title": "Introducing GPT-5.4",
+          "quote": "Today, we’re releasing GPT‑5.4 in ChatGPT (as GPT‑5.4 Thinking), the API, and Codex.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "bf73226d5fbe1cfdbc897f9ab08ee1b2ef14e0481ff7fbcd38427aca2d1d31ae"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": true
+    },
+    {
+      "id": "gpt-5.5",
+      "name": "GPT-5.5",
+      "releaseDate": "2026-04-23",
+      "representativeFrom": "2026-04-23",
+      "eventKind": "codex-availability",
+      "defaultEvidenceScope": null,
+      "confidence": "high availability evidence; representative selection",
+      "rationale": "Codex rollout began April 23; API followed April 24. Use the Codex rollout date rather than the later package fallback change.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "title": "Introducing GPT-5.5",
+          "quote": "Today, GPT‑5.5 is rolling out to Plus, Pro, Business, and Enterprise users in ChatGPT and Codex",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "2689b02919e2430504b93114f61c0be58c0fe8bc7eb5ef63300b4950a6ef1f9e"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": true
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "name": "GPT-5.6 Sol",
+      "releaseDate": "2026-07-09",
+      "previewDate": "2026-06-26",
+      "representativeFrom": "2026-07-09",
+      "eventKind": "codex-general-rollout",
+      "defaultEvidenceScope": null,
+      "confidence": "high general-rollout evidence; representative selection",
+      "rationale": "Use general rollout, not the June 26 restricted preview; Sol is the announced flagship tier. The daily date does not prove the exact hour a given account received access.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-5-6/",
+          "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+          "quote": "GPT‑5.6 is available starting today across ChatGPT, Codex, and the OpenAI API.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "dbe5726bd2c5396b8ac40741ed98cfa4a8a078e47ce2f58129430c0d8f2395c1"
+        },
+        {
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "title": "Previewing GPT-5.6 Sol",
+          "quote": "a select group of trusted partners and organizations",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "37cc4bc09c064d0dd0b38f7a55a4fb33f0abef1f87e4016693693fd353c6fcea"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": true
+    },
+    {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "releaseDate": "2026-09-03",
+      "eventKind": "codex-paid-plan-rollout",
+      "defaultEvidenceScope": null,
+      "confidence": "high launch evidence; medium-high representative boundary from official announcement embedding official OpenAI rollout notice",
+      "rationale": "Record the September 3 limited launch and September 4 selected paid-plan expansion as availability events. Keep GPT-5.6 Sol selected until GPT-6 Sol to preserve one consistent workhorse track unless package engine evidence establishes Astra as an actual default.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "section": "September 3, 2026: Introducing GPT-6 Astra",
+          "quote": "Astra is not yet generally available.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "484e17e36743bd979a323a1993980e5755513deda968765685efea71ed70f4fa"
+        },
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "title": "GPT-6 Astra: A new generation of intelligence",
+          "quote": "GPT‑6 Astra is rolling out today to a limited set of organizations",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "a07b175aecdf283f5340240fc1cf9ba4431638269b1fc8f38766cc951092658c"
+        },
+        {
+          "url": "https://community.openai.com/t/introducing-gpt-6-astra-the-most-intelligent-and-aligned-model-in-the-world/1394703",
+          "section": "Official announcement, embedded OpenAI September 4 rollout update",
+          "quote": "now available to all Pro, Enterprise, and Business Premium users in ChatGPT Work and Codex",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "8d77550e1b5aa65fff8b85fd189b26d89ef84db1e7d6d07bca67c9a785a5da5e"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": false,
+      "paidPlanAvailabilityDate": "2026-09-04",
+      "representativeFrom": null
+    },
+    {
+      "id": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "releaseDate": "2026-09-22",
+      "representativeFrom": "2026-09-22",
+      "eventKind": "codex-availability",
+      "defaultEvidenceScope": null,
+      "confidence": "high availability evidence; representative selection",
+      "rationale": "Select the new lower-cost workhorse to show its historical arrival. Astra remains available and more capable; this is not a claim that Astra was retired or that all desktops switched.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "title": "Introducing GPT-6 Sol and Luna",
+          "quote": "GPT‑6 Sol and GPT‑6 Luna are available in ChatGPT Work and Codex starting today",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "9f559bc017ef9f4f1c0dcdece2158bf866aa86e16e3aee76b513a7a90be97a7d"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "section": "September 22, 2026: GPT-6 Sol and Luna in Work and Codex",
+          "quote": "Codex desktop keeps the model you selected manually.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "9a64937ea17902f9546391fa895c3267e5f86914f9f906097e05f0e31c461273"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": true
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "name": "GPT-6.1 Sol",
+      "releaseDate": "2026-09-29",
+      "representativeFrom": "2026-09-29",
+      "eventKind": "codex-availability-and-cli-catalog-default",
+      "defaultEvidenceScope": "Codex CLI 0.159.1 bundled catalog and Bedrock catalogs; does not independently prove every desktop account default",
+      "confidence": "high Codex availability and CLI-default evidence; representative desktop selection",
+      "rationale": "Official release supports Codex rollout and an explicit CLI bundled-catalog default change. Verify desktop embedded-engine correspondence separately before labeling a desktop version verified-default.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "title": "Introducing GPT-6.1 Sol",
+          "quote": "GPT‑6.1 Sol is available starting today to all Plus, Pro, Business, Enterprise, and Edu users in ChatGPT Work and Codex.",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "49ce3ab7f0fa145c7befe4a45698ada163227cf0a969b34b43246a2a31a7335e"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/changelog",
+          "section": "2026-09-29 Codex CLI 0.159.1",
+          "quote": "Added GPT-6.1 Sol as the default model in the bundled catalog",
+          "retrievedAt": "2026-10-05",
+          "excerptSha256": "5491f6520d53dec06dcbad199ed4b2f175cf840e727908dae8ce52e2319b24a3"
+        }
+      ],
+      "datePrecision": "day",
+      "exactRolloutTimestamp": null,
+      "desktopDefaultVerified": false,
+      "representativeSelection": true
+    }
+  ],
+  "excludedSelections": [
+    {
+      "model": "gpt-5.3-codex-spark",
+      "reason": "Specialized research-preview alternative, not the primary general-use chronology."
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "reason": "Smaller companion tier, not selected for the primary-model reconstruction."
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "reason": "Balanced companion tier; use flagship Sol for this representative scenario."
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "reason": "Cost-efficient companion tier; Chat default changes must not be confused with Codex desktop defaults."
+    },
+    {
+      "model": "gpt-6-luna",
+      "reason": "Cost-efficient companion tier; retain Sol for the representative complex-work scenario."
+    },
+    {
+      "model": "gpt-6-astra",
+      "reason": "Separate flagship tier. Availability is recorded; no default switch verified, so preserve the Sol workhorse track."
+    }
+  ],
+  "openQuestions": [
+    "Desktop embedded engine correspondence must be checked before promoting CLI catalog evidence to desktop default evidence.",
+    "Per-account server-side isDefault flags and historical saved user selections are not reconstructed by these public sources.",
+    "Astra September 4 access notice establishes selected paid-plan access, not universal availability."
+  ]
+}

@@ -1,6 +1,6 @@
 # Codex Timeline
 
-**View it:** *link coming soon*
+**View it:** [Codex Timeline](https://codex-timeline.loftycrown20.chatgpt.site)
 
 An interactive timeline of the Codex desktop app's home screen, from the first public release in February 2026 to October 2026. Every version is rendered by its own original frontend, and the timeline animates between them. Scrub, scroll or play through every public release and dated model change in light and dark themes, and save any moment as a PNG. Stop on a version and its home screen responds like the app: controls show their hover states and tooltips, clicks open the app's menus and dialogs or toggle its sidebar and panels, and the composer takes typing.
 
